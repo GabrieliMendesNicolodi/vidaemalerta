@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<title>Vida em Alerta</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+
+<header>
+</header>
+
+<main>
+<article>
+<p><a href="#" class="btn">Fazer uma denúncia</a></p> 
+<p><a href="#" class="btn">Ver contatos de emergência</a></p> 
+</article>
+</main>
+
+<footer>
+</footer>
+
+</body>
+</html>

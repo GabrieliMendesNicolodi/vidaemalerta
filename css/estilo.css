@@ -1,0 +1,26 @@
+/* GERAL */
+html {
+    font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+}
+/* INDEX.HTML */
+main {
+    background-image: url('../midias/background-vida-em-alerta-desktop.png');
+    background-position: top;
+    background-repeat: repeat-y;
+    background-size: cover;
+    height: calc(100vh - 237px);
+}
+main a {
+    color: white;
+    background-color: #8e2020;
+    border-radius: 20px;
+    padding: 10px;
+}
+main article{
+    text-align: center;
+    top: 35vh;
+    position: relative;
+}

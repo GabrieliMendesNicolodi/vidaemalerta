@@ -6,6 +6,9 @@ a {
     text-decoration: none;
 }
 /* INDEX.HTML */
+nav {
+    display: none;
+}
 main {
     background-image: url('../midias/background-vida-em-alerta-desktop.png');
     background-position: top;

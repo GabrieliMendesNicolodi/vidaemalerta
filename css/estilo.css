@@ -24,11 +24,28 @@ header span.menu{
 nav {
     display: none;
 }
-nav li a{
-    color:black;
+nav.sidenav ul{
+    padding: 10px;
 }
-nav li{
+li.maintitle a, li.support li.subheading a {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+li{
     list-style: none;
+    line-height: 2;
+}
+li.support {
+    font-size: 22px;
+    font-weight: 600;
+    color: #8E2020;
+}
+li.support li.subheading a{
+    font-weight: 100;
+}
+li.support ul {
+    padding: 0;
 }
 
 /* The side navigation menu */
@@ -51,10 +68,7 @@ nav li{
   
   /* The navigation menu links */
   .sidenav a {
-    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
     display: block;
     transition: 0.3s;
   }
@@ -84,7 +98,23 @@ main article{
     top: calc(40vh - 120px);
     position: relative;
 }
-footer {
-    bottom: auto;
-    position: fixed;
+main article header a{
+    display: flex;
+    width: 100%;
 }
+main article header a img{
+    margin: auto;
+}
+footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+/* ***** MEDIA QUERIES ******** */
+/*@media screen and (orientation: portrait){
+    footer{
+        text-align: center;
+    }
+}*/

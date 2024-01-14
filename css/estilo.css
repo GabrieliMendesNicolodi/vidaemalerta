@@ -4,6 +4,7 @@ html {
 }
 a {
     text-decoration: none;
+    color:black;
 }
 /* INDEX.HTML */
 
@@ -75,7 +76,7 @@ li.support ul {
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: #8e2020;
   }
   
   /* Position and style the close button (top right corner) */
@@ -87,16 +88,32 @@ li.support ul {
     margin-left: 50px;
   }
 
-main a.btn {
-    color: white;
+main p.btn {
     background-color: #8e2020;
     border-radius: 20px;
-    padding: 10px;
+    padding: 10px 20px;
+    font-size: 28px;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+main p.btn a{
+    color: white;
 }
 main article{
     text-align: center;
-    top: calc(40vh - 120px);
     position: relative;
+    top: calc(20vh - 120px);
+}
+main#index article{
+    top: calc(40vh - 120px);
+}
+main article p{
+    font-size: 30px;
+}
+main article p.alert{
+    color:#8E2020;
+    font-weight: 600;
 }
 main article header a{
     display: flex;

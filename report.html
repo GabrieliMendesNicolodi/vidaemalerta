@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
 
@@ -33,7 +34,83 @@
                 <header>
                     <p>Preencha todas as informações solicitadas!</p>
                 </header>
-
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <form id="sendReport" method="post">
+                                <div class="mb-3">
+                                    <label for="date" class="form-label">Em qual data aconteceu esssa situação?</label>
+                                    <input type="date" class="form-control" name="date" id="date" placeholder="lorem ipsum doller">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Informe qual é o animal que se encontra nessa situação:</label>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" value="" id="cat">
+                                        <label for="cat" class="form-check-label">Gato</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" value="" id="dog">
+                                        <label for="dog" class="form-check-label">Cão</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" value="" id="horse">
+                                        <label for="horse" class="form-check-label">Cavalo</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" value="" id="chicken">
+                                        <label for="chicken" class="form-check-label">Galo/Galinha</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <p>Em caso de denúncias envolvendo cavalos, pedimos que se reporte à Delegacia On-line para que faça um Boletim de Ocorrência ocmunicando os fatos. Este B.O. é importantíssimo, pois em casos de tratamento, cirurgia ou demais gastos provenientes do resgate animal, ele vai corroborar a deúncia aqui apresentada, liberando fundos municipais para seu pagamento. <a href="#">Faça seu B.O. aqui</a></p>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="thesameasid" class="form-label">Já tem B.O.?</label>
+                                    <input type="file" class="form-control" id="bo" name="bo">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Informe a situação em que se encontra o animal:</label>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" value="" id="abandoned">
+                                        <label for="abandoned" class="form-check-label">Abandonado</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" value="" id="injured">
+                                        <label for="injured" class="form-check-label">Ferido</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" value="" id="homeless">
+                                        <label for="homeless" class="form-check-label">Sem abrigo</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" value="" id="noWaterFood">
+                                        <label for="noWaterFood" class="form-check-label">Sem água/comida</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" value="" id="rainSunExposure">
+                                        <label for="rainSunExposure" class="form-check-label">Exposição chuva ou sol excessivo</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" value="" id="victimOfFights">
+                                        <label for="victimOfFights" class="form-check-label">Vítima de brigas ou rinhas</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="thesameasid" class="form-label"></label>
+                                    <input type="" class="form-control" id="idname" placeholder="lorem ipsum doller">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="thesameasid" class="form-label"></label>
+                                    <input type="" class="form-control" id="idname" placeholder="lorem ipsum doller">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="thesameasid" class="form-label"></label>
+                                    <input type="" class="form-control" id="idname" placeholder="lorem ipsum doller">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
                 <p class="btn"><a href="#">xxx</a></p>  
             </article>
             
@@ -46,5 +123,6 @@
         
     <script src="js/main.js"></script>
     <script src="js/jquery_3_7_1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>

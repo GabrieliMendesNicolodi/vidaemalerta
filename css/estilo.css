@@ -4,26 +4,134 @@ html {
 }
 a {
     text-decoration: none;
+    color:black;
 }
 /* INDEX.HTML */
-nav {
-    display: none;
-}
-main {
+
+html {
     background-image: url('../midias/background-vida-em-alerta-desktop.png');
     background-position: top;
     background-repeat: repeat-y;
     background-size: cover;
     height: calc(100vh - 237px);
 }
-main a {
-    color: white;
+header span.home {
+    float: right;
+}
+header span.menu{
+    position: fixed;
+    z-index: 2;
+}
+nav {
+    display: none;
+}
+nav.sidenav ul{
+    padding: 10px;
+}
+li.maintitle a, li.support li.subheading a {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+li{
+    list-style: none;
+    line-height: 2;
+}
+li.support {
+    font-size: 22px;
+    font-weight: 600;
+    color: #8E2020;
+}
+li.support li.subheading a{
+    font-weight: 100;
+}
+li.support ul {
+    padding: 0;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #ffffff; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+
+.areawidth{
+    width: 85%;
+}
+  
+  /* The navigation menu links */
+  .sidenav a {
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #8e2020;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+main p.btn {
     background-color: #8e2020;
     border-radius: 20px;
-    padding: 10px;
+    padding: 10px 20px;
+    font-size: 28px;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+main p.btn a{
+    color: white;
 }
 main article{
     text-align: center;
-    top: 35vh;
     position: relative;
+    top: calc(20vh - 120px);
 }
+main#index article{
+    top: calc(40vh - 120px);
+}
+main article p{
+    font-size: 30px;
+}
+main article p.alert{
+    color:#8E2020;
+    font-weight: 600;
+}
+main article header a{
+    display: flex;
+    width: 100%;
+}
+main article header a img{
+    margin: auto;
+}
+footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+/* ***** MEDIA QUERIES ******** */
+/*@media screen and (orientation: portrait){
+    footer{
+        text-align: center;
+    }
+}*/

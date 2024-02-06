@@ -34,8 +34,100 @@
                 <header>
                     <p>Preencha todas as informações solicitadas!</p>
                 </header>
-
-                <p class="btn"><a href="#">xxx</a></p>  
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <form id="sendReport" method="post">
+                                <div class="mb-3">
+                                    <label for="date" class="form-label">Em qual data aconteceu esssa situação?</label>
+                                    <input type="date" class="form-control" name="date" id="date" placeholder="lorem ipsum doller">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Informe qual é o animal que se encontra nessa situação:</label>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" value="" id="cat">
+                                        <label for="cat" class="form-check-label">Gato</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" value="" id="dog">
+                                        <label for="dog" class="form-check-label">Cão</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" value="" id="horse">
+                                        <label for="horse" class="form-check-label">Cavalo</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" value="" id="chicken">
+                                        <label for="chicken" class="form-check-label">Galo/Galinha</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <p>Em caso de denúncias envolvendo cavalos, pedimos que se reporte à Delegacia On-line para que faça um Boletim de Ocorrência ocmunicando os fatos. Este B.O. é importantíssimo, pois em casos de tratamento, cirurgia ou demais gastos provenientes do resgate animal, ele vai corroborar a deúncia aqui apresentada, liberando fundos municipais para seu pagamento. <a href="#">Faça seu B.O. aqui</a></p>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="thesameasid" class="form-label">Já tem B.O.?</label>
+                                    <input type="file" class="form-control" id="bo" name="bo">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Informe a situação em que se encontra o animal:</label>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" value="" id="abandoned">
+                                        <label for="abandoned" class="form-check-label">Abandonado</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" value="" id="injured">
+                                        <label for="injured" class="form-check-label">Ferido</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" value="" id="homeless">
+                                        <label for="homeless" class="form-check-label">Sem abrigo</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" value="" id="noWaterFood">
+                                        <label for="noWaterFood" class="form-check-label">Sem água/comida</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" value="" id="rainSunExposure">
+                                        <label for="rainSunExposure" class="form-check-label">Exposição chuva ou sol excessivo</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" value="" id="victimOfFights">
+                                        <label for="victimOfFights" class="form-check-label">Vítima de brigas ou rinhas</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-group">
+                                        <label for="neighborhood" class="form-label">Informe o endereço onde está ocorrendo essa situação:</label>
+                                        <select class="form-select" id="neighborhood" aria-label="Default select example">
+                                            <option selected>Selecione o bairro</option>
+                                            <option value="centro">Centro</option>
+                                            <option value="fontes">Fontes</option>
+                                            <option value="expedicionario">Expedicionário</option>
+                                            <option value="farroupilha">Farroupilha</option>
+                                            <option value="missoes">Missões</option>
+                                            <option value="botucarai">Botucaraí</option>
+                                            <option value="primavera">Primavera</option>
+                                        </select>
+                                        <label for="description" class="form-label">Descreva o local e a situação</label>
+                                        <textarea type="" class="form-control" id="description" placeholder="Descreva o local de forma detalhada, com referências para possa ser localizado."></textarea>
+                                    </div>
+                                    
+                                </div>
+                                <div class="mb-3">
+                                    <label for="pictures" class="form-label">Envie até 5 fotos do local que comprovem a situação relatada:</label>
+                                    <input type="file" class="form-control" id="pictures" name="pictures">
+                                </div>
+                                <div class="mb-3">
+                                     <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" value="" id=agreement"">
+                                        <label for="agreement" class="form-check-label">Concordo que meu endereço de IP seja armazenado para eventual consulta caso seja necessário para averiguação da denúncia. Seu endereço IP é: 123.456.789.01</label>
+									 </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <p class="btn"><a href="#">Enviar denúncia</a></p>  
             </article>
             
         </main>

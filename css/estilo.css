@@ -10,7 +10,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f0f0f0;
+    justify-content: center; /* Garantir que o conteúdo fique centralizado verticalmente */
+    background: url('midias/background-vida-em-alerta-mobile.png') no-repeat center center fixed; /* Adiciona a imagem de fundo */
+    background-size: cover; /* Garante que a imagem cubra toda a área */
     height: 100vh;
     overflow-x: hidden;
 }
@@ -18,7 +20,7 @@ body {
 header {
     width: 100%;
     max-width: 400px;
-    background-color: #fff;
+    /*background-color: #fff;*/
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -52,9 +54,8 @@ header .material-symbols-outlined {
 main {
     width: 100%;
     max-width: 400px;
-    background-color: #fff;
+    /*background-color: #fff;*/
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 10px;
 }
 
@@ -84,7 +85,7 @@ main .btn a {
 footer {
     width: 100%;
     max-width: 400px;
-    background-color: #fff;
+    /*background-color: #fff;*/
     padding: 10px;
     text-align: center;
     border-top: 1px solid #ccc;

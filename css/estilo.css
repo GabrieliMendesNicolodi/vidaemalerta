@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center; /* Garantir que o conteúdo fique centralizado verticalmente */
-    background: url('caminho/para/sua/imagem.jpg') no-repeat center center fixed; /* Adiciona a imagem de fundo */
+    background: url('midias/background-vida-em-alerta-mobile.png') no-repeat center center fixed; /* Adiciona a imagem de fundo */
     background-size: cover; /* Garante que a imagem cubra toda a área */
     height: 100vh;
     overflow-x: hidden;

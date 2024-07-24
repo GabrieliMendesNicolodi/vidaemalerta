@@ -1,44 +1,143 @@
-/* GERAL */
-html {
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
 }
-a {
-    text-decoration: none;
-    color:black;
-}
-/* INDEX.HTML */
 
-html {
+
+body {
+    background: none !important;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-y: scroll;
+}
+
+.containerMobile{
+    width: 100%;
+    max-width: 480px; /* Largura típica de um smartphone */
     background-image: url('../midias/background-vida-em-alerta-desktop.png');
     background-position: top;
     background-repeat: repeat-y;
     background-size: cover;
-    height: calc(100vh - 237px);
 }
+
 header span.home {
     float: right;
 }
-header span.menu{
+
+main {
+    top: 28px;
+    position: relative;
+    height: calc(100vh - 100px);
+}
+
+.containerMobile > header{
     position: fixed;
-    z-index: 2;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 1;
+    max-width: 480px;
+    width: 100vw;
 }
-nav {
-    display: none;
-}
-nav.sidenav ul{
-    padding: 10px;
-}
-li.maintitle a, li.support li.subheading a {
-    color: black;
-    font-size: 18px;
-    font-weight: 600;
+
+/* The side navigation menu */
+.sidenav ul{
+    /*height: calc(100vh - 72px); considera a altura do footer 72px*/
+    padding: 10px
 }
 li{
     list-style: none;
     line-height: 2;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #ffffff;
+    max-width: 480px;
+}
+
+/* GERAL */
+/*html {
+    font-family: sans-serif;
+    / *background-image: url('../midias/background-vida-em-alerta-desktop.png');
+    background-position: top;
+    background-repeat: repeat-y;
+    background-size: cover;
+    height: calc(100vh - 237px);* /
+}*/
+
+/*body > header {
+    position: relative;
+    height: 30px;
+}*/
+/*body{
+    background: none !important;
+    margin: 0;
+}*/
+
+/*.containerMobile{
+    background-image: url(../midias/background-vida-em-alerta-desktop.png);
+    background-position: top;
+    background-repeat: repeat-y;
+    background-size: cover;
+    height: 100vh;
+    width: 400px;
+    margin-right:auto;
+    margin-left:auto;
+}*/
+/*a {
+    text-decoration: none;
+    color:black;
+}*/
+/*footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}*/
+
+/*footer p {
+    line-height: 1;
+    font-size: small;
+    margin-bottom: 3px;
+}*/
+
+/* INDEX.HTML */
+
+#index > article:first-child > header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: calc(100px - 72px);
+}
+/*header span.menu{
+    position: fixed;
+    z-index: 2;
+}*/
+nav {
+    display: none;
+}
+/*nav.sidenav ul{
+    padding: 10px;
+    min-width: 300px;
+}
+li.support a{
+    color: black;
+    line-height: 1;
+    font-size: small;
+    margin-bottom: 5px;
+}
+li.maintitle a{
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
 li.support {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     color: #8E2020;
 }
@@ -47,10 +146,9 @@ li.support li.subheading a{
 }
 li.support ul {
     padding: 0;
-}
+}*/
 
-/* The side navigation menu */
-.sidenav {
+.sidenavOLD {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
@@ -64,15 +162,16 @@ li.support ul {
   }
 
 .areawidth{
+    display:contents;
     width: 85%;
 }
   
   /* The navigation menu links */
-  .sidenav a {
+  /*.sidenav a {
     text-decoration: none;
     display: block;
     transition: 0.3s;
-  }
+  }*/
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
@@ -92,19 +191,23 @@ main p.btn {
     background-color: #8e2020;
     border-radius: 20px;
     padding: 10px 20px;
-    font-size: 28px;
+    font-size: 1.2em;
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
+    text-align: center;
 }
 main p.btn a{
     color: white;
+    text-decoration: none;
 }
+
 main article{
     text-align: center;
     position: relative;
     top: calc(20vh - 120px);
-}
+}/*
 main#index article{
     top: calc(40vh - 120px);
 }
@@ -121,14 +224,16 @@ main article header a{
 }
 main article header a img{
     margin: auto;
-}
-footer {
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    text-align: center;
-}
+}*/
 
+/** options page **/
+
+/*#options p.btn {
+    font-size: 15px;
+}
+#options header {
+    height: 60px;
+}*/
 /* ***** MEDIA QUERIES ******** */
 /*@media screen and (orientation: portrait){
     footer{
